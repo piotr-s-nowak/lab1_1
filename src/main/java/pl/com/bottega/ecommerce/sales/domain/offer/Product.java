@@ -3,13 +3,13 @@ package pl.com.bottega.ecommerce.sales.domain.offer;
 import java.util.Date;
 
 public class Product {
-    private int id;
+    private String id;
     private String type;
     private String name;
     private Date snapshotDate;
     private Money price;
 
-    public Product(int id, String type, String name, Date snapshotDate, Money price) {
+    public Product(String id, String type, String name, Date snapshotDate, Money price) {
         this.id = id;
         this.type = type;
         this.name = name;
@@ -17,11 +17,11 @@ public class Product {
         this.price = price;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
